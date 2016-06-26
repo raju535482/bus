@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.sony.citybusmanagement.MainActivity22"
+        >
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/line2"
+            android:gravity="center"
+            android:layout_below="@+id/line1"
+            android:weightSum="6"
+            android:background="#009688"
+            >
+
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Select"
+                android:gravity="fill_vertical"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+
+                />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/spin"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/line3"
+            android:gravity="center"
+            android:layout_below="@+id/line2"
+            android:weightSum="3"
+            android:background="#2f4f4f"
+            >
+            <TextView
+                android:layout_weight="1"
+                android:background="#66cdaa"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/tw1"
+                android:textStyle="bold"
+                android:hint="1"
+                android:textSize="20sp"
+                android:layout_gravity="top"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.2"
+
+                android:background="#2f4f4f"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:id="@+id/tw2"
+                android:hint="This Bus service is from"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="Source"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:hint="Destination"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                />
+            />
+
+            <TextView
+                android:layout_weight="1"
+                android:background="#66cdaa"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:id="@+id/tw3"
+                android:textStyle="bold"
+                android:hint="Routes/Important Stops"
+                android:textSize="18sp"
+                android:layout_gravity="top"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/line4"
+            android:gravity="center"
+            android:layout_below="@+id/line3"
+            android:background="#009688"
+            >
+            <ListView
+                android:id="@+id/lv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.sony.citybusmanagement.Main28Activity"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/line2"
+            android:gravity="top"
+            android:layout_below="@+id/line1"
+            android:background="#009688">
+
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Information"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: Raju Yadav"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MoB1: +909016371161"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MoB2: +907405042675"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: raju535482@gmail.com"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

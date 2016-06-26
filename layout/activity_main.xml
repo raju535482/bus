@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context="com.example.sony.citybusmanagement.MainActivity"
+>
+<LinearLayout
+    android:id="@+id/line1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/swdassa"
+    android:gravity="center">
+
+    <ImageView
+
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/iv1"
+        android:src="@drawable/blackbus"/>
+</LinearLayout>
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/line2"
+    android:background="#2f4f4f"
+    android:layout_below="@+id/line1"
+    >
+    <TextView
+        android:layout_marginTop="70dp"
+        android:id="@+id/tv2"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City Bus Management"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#7fffd4"
+        android:shadowColor="@android:color/holo_blue_dark"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/anibus"
+        android:background="#2f4f4f"
+
+        />
+
+</LinearLayout>
+</RelativeLayout>

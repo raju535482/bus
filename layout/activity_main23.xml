@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sony.citybusmanagement.MainActivity23"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/line2"
+        android:gravity="center"
+        android:layout_below="@+id/line1"
+        android:background="#009688">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/line4"
+            android:gravity="center"
+            android:layout_below="@+id/line1"
+            android:weightSum="6"
+            >
+
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="From"
+                android:layout_marginLeft="5dp"
+                android:gravity="fill_vertical"
+                android:textStyle="bold"
+
+                android:textSize="20sp"
+
+                />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/spin1"></Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/line5"
+            android:gravity="center"
+            android:layout_below="@+id/line1"
+            android:weightSum="6"
+            >
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="To"
+                android:gravity="fill_vertical"
+                android:textStyle="bold"
+
+                android:textSize="20sp"
+
+                />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/spin2"></Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bn1"
+            android:background="@drawable/text_field"
+            android:text="Search"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blackline"
+        android:layout_marginTop="200dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/line3"
+        android:gravity="center"
+        android:layout_below="@+id/line2"
+        android:background="#696969">
+        <ListView
+            android:id="@+id/lv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

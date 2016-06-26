@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Listview to display slider menu -->
+    <ListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#272727"
+        android:dividerHeight="1dp"
+        android:listSelector="#ffffff"
+        android:background="#303030"/>
+
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/fl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#009688">
+
+
+            <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                                android:id="@+id/image1"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/assign1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center"
+                                android:onClick="sendMessage1"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Bus Details"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                                android:id="@+id/image2"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/dir1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center"
+                                android:onClick="sendMessage2"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="From To"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                                android:id="@+id/image3"
+                                android:onClick="sendMessage3"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/loc1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Bus Locations"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                                android:onClick="sendMessage4"
+                                android:id="@+id/image4"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/rev1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Feedback"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                               android:id="@+id/image5"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/mp1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center"
+                                android:onClick="sendMessage5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Bus Route"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:padding="10dip"
+                            android:layout_height="fill_parent">
+
+                            <ImageView
+                                android:background="?android:attr/selectableItemBackground"
+                                android:id="@+id/image6"
+                                android:layout_height="100dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/can1"
+                                android:layout_width="fill_parent"
+                                android:layout_gravity="center"
+                                android:onClick="sendMessage6"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Close"
+                                android:textColor="#ffffff"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"
+                                android:gravity="center"/>
+
+                        </LinearLayout>  </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+</ScrollView>
+</android.support.v4.widget.DrawerLayout>
+</android.support.design.widget.CoordinatorLayout>
